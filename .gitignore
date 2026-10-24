@@ -1,0 +1,31 @@
+# ==== 密钥与本地配置（绝不提交）====
+.env
+.env.local
+.claude/settings.local.json
+
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ==== 运行时数据（本地数据库 / 向量库 / 上传文件）====
+backend/*.db
+backend/chroma_db/
+backend/uploads/
+backend/_e2e_result.txt
+
+# ==== 前端 ====
+node_modules/
+dist/
+out/
+
+# ==== 质量门禁标记 ====
+.quality-gates/
+
+# ==== 系统 / 编辑器 ====
+.DS_Store
+Thumbs.db
+*.log
